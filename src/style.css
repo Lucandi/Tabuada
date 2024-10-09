@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#titulo{
+    color: white;
+    margin: 0;
+}
+.div-container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.div-container-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 150px;
+    width: 200px;
+    height: 200px;
+ /* margin: auto;*/
+    background-color: transparent;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 10%;
+    box-shadow:  4px 6px 0px rgba(255, 255, 255, 0.76);
+    max-height: 800px;
+}
+.div-container-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 10%;
+    box-shadow:  4px 6px 0px rgba(255, 255, 255, 0.76);
+    max-height: 800px;
+}
+input{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+input::placeholder{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.644);
+}
+input:hover{
+    transform: scale(1.08);
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Removes spinners in Firefox */
+}
+input[type="button"]{
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+#res{
+    color: greenyellow;
+    gap: 10px;
+    min-height: 5px; /* Adjust this value as needed */
+    font-weight: 400;
+}
